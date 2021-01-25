@@ -2,14 +2,38 @@ import random
 
 from ellevator_parts import Building, Cabin, Passenger
 
-tower = Building()
+floor_list_possibilities = [
+    range(1, 11),
+    [i for i in range(1, 51) if i != 13],
+    ['A', 'B', 'C', 'D', 'E'],
+    ['Basement', 1, 'Mezzanine', 2, 3, 4, 'Penthouse']
+]
 
-the_only_cabin = Cabin(id='A', building=tower, current_floor=1, passenger_max=2)
+south_park = ['Cartman', 'Stan', 'Kyle', 'Kenny', 'Butters']
+star_wars = ['Luke Skywalker', 'Han Solo', 'Princess Leia', 'Darth Vader', 'Jabba the Hut']
 
-south_park_characters = ['Cartman', 'Stan', 'Kyle', 'Kenny', 'Butters']
-star_wars_characters = ['Luke Skywalker', 'Han Solo', 'R2D2', 'Darth Vader', 'Jabba the Hut']
 
-passengers = [Passenger(character, tower, random.choice(tower.floor_list), random.choice(tower.floor_list))
-              for character in south_park_characters]
+def main():
+    characters = south_park
 
-the_only_cabin.dispatch()
+    building = Building(floor_list=random.choice(floor_list_possibilities))
+
+    the_only_cabin = Cabin(id='ELL',
+                           building=building,
+                           current_floor=random.choice(building.floor_list),
+                           passenger_max=5)
+
+    passengers = [Passenger(name=character,
+                            building=building,
+                            current_floor=random.choice(building.floor_list),
+                            destination_floor=random.choice(building.floor_list))
+                  for character in characters]
+
+    the_only_cabin.dispatch()
+
+    # Manual Ellevator call
+    passengers[-1].call_ellevator()
+
+
+if __name__ == '__main__':
+    main()

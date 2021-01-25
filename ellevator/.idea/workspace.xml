@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c3e9e911-7410-4fad-b4a6-dd808426e7fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/ellevator_parts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ellevator_parts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,22 +13,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ellevator_parts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="143" column="77" lean-forward="true" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="77" />
+            <state relative-caret-position="225">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="418">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../di-preprocessing/account/in_stanthonyindy/student/port.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" selection-start-line="38" selection-end-line="39" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,17 +57,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ellevator</find>
-      <find>len()</find>
-      <find>for</find>
-      <find>p</find>
-      <find>passengers_to_ocu</find>
-      <find>stops_in_order</find>
-      <find>passenger</find>
-      <find>remove(self.current_floor)</find>
-      <find>moving</find>
-      <find>visitor</find>
-      <find>passengers</find>
       <find>floors_up_pressed.remove</find>
       <find>remove(stop)</find>
       <find>enter_cabin</find>
@@ -74,6 +76,17 @@
       <find>order_floors</find>
       <find>TODO:</find>
       <find>alread</find>
+      <find>yet</find>
+      <find>not calling</find>
+      <find>press_floor_button</find>
+      <find>floors_to_sort</find>
+      <find>bool</find>
+      <find>ELLevator</find>
+      <find>the person</find>
+      <find>what floor</find>
+      <find>abort</find>
+      <find>floor they</find>
+      <find>UP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,8 +105,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-14" />
-    <option name="width" value="2606" />
+    <option name="x" value="75" />
+    <option name="y" value="-39" />
+    <option name="width" value="2589" />
     <option name="height" value="1425" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -219,14 +233,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1686329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32882884" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.954955" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45195195" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.045045044" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.045045044" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -302,20 +317,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ellevator_parts.py">
+    <entry file="file://$PROJECT_DIR$/../../di-preprocessing/account/in_stanthonyindy/student/port.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="143" column="77" lean-forward="true" selection-start-line="143" selection-start-column="77" selection-end-line="143" selection-end-column="77" />
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="39" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="418">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ellevator_parts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
