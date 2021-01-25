@@ -14,7 +14,7 @@ star_wars = ['Luke Skywalker', 'Han Solo', 'Princess Leia', 'Darth Vader', 'Jabb
 
 
 def main():
-    characters = south_park
+    characters = star_wars
 
     building = Building(floor_list=random.choice(floor_list_possibilities))
 
@@ -29,10 +29,18 @@ def main():
                             destination_floor=random.choice(building.floor_list))
                   for character in characters]
 
+    for p in passengers:
+        print('{}: {} -> {}'.format(p.name, p.current_floor, p.destination_floor))
+
+    print('\n')
+
+    for p in passengers:
+        p.call_ellevator()
+
     the_only_cabin.dispatch()
 
     # Manual Ellevator call
-    passengers[-1].call_ellevator()
+    #passengers[-1].call_ellevator()
 
 
 if __name__ == '__main__':

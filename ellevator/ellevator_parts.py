@@ -181,15 +181,12 @@ class Passenger():
         self.cabin = None
         self.is_going_up = None
         self.building.potential_passengers.append(self)
-        if self.current_floor != self.destination_floor and self.destination_floor is not None:
-            self.call_ellevator()
-        else:
-            print('{} is already on their desired floor and not calling an ELLevator.'.format(self.name))
+
 
     def call_ellevator(self):
         '''Press the UP or DOWN button on a floor (if not pressed already) depending on one's traveling destination  -
         if None or invalid, ask to input a valid floor with options to show available floors or abort the call.'''
-        while self.destination_floor not in self.building.floor_list:
+        while self.destination_floor not in self.building.floor_list or self.current_floor == self.destination_floor:
             floor_input = raw_input(
                 'What floor would {} like to go to? Please enter a valid floor, "show floors" or "nevermind". '.format(
                     self.name))
