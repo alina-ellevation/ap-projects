@@ -2,14 +2,12 @@ from ellevator_parts import Building, Cabin, Passenger
 
 tower = Building()
 
-# TODO: random passenger creation
+cabin_1 = Cabin(id='A', building=tower, current_floor=5, passenger_max=4)
 
-alina = Passenger('Alina', tower, 1, 10)
-greg = Passenger('Greg', tower, 1, 5)
-yiayia = Passenger('Yiayia', tower, 2, 4)
-papou = Passenger('Papou', tower, 2, 3)
-livy = Passenger('Livy', tower, 10, 5)
-sophie = Passenger('Sophie', tower, 10, 7)
+alina = Passenger('Alina', tower, 2, 5)
+greg = Passenger('Greg', tower, 1, 10)
+livy = Passenger('Livy', tower, 4, 8)
+sophie = Passenger('Sophie', tower, 6, 2)
+yiayia = Passenger('Yiayia', tower, 8, 2)
 
-cabin_1 = Cabin(id='A', building=tower, floor_to_start=1, floors_not_served=[])
-cabin_1.move()
+cabin_1.dispatch()
