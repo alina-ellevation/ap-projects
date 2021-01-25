@@ -182,7 +182,7 @@ class Passenger():
         if len(cabin.passengers) == cabin.passenger_max:
             print('Cabin {} is now full.'.format(cabin.id))
 
-    def select_floor(self):  # TODO: should sorting happen here instead of dispatch function?
+    def select_floor(self):
         if self.destination_floor in self.cabin.buttons_pressed:
             print('The floor {} button is already pressed.'.format(self.destination_floor))
         else:
