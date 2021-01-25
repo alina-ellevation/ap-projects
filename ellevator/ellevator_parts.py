@@ -157,7 +157,7 @@ class Passenger():
         if self.current_floor != self.destination_floor and self.destination_floor is not None:
             self.call_ellevator()
         else:
-            print{'{} is already on the floor they want to be and not calling an ELLevator yet.'.format(self.name)}
+            print('{} is already on the floor they want to be and not calling an ELLevator.'.format(self.name))
 
     def call_ellevator(self):  # TODO: add error handling of destination floor being empty
         self.is_going_up = self.building.floor_list.index(
