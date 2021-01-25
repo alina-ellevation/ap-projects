@@ -1,13 +1,15 @@
+import random
+
 from ellevator_parts import Building, Cabin, Passenger
 
 tower = Building()
 
-cabin_1 = Cabin(id='A', building=tower, current_floor=5, passenger_max=4)
+the_only_cabin = Cabin(id='A', building=tower, current_floor=1, passenger_max=2)
 
-alina = Passenger('Alina', tower, 2, 5)
-greg = Passenger('Greg', tower, 1, 10)
-livy = Passenger('Livy', tower, 4, 8)
-sophie = Passenger('Sophie', tower, 6, 2)
-yiayia = Passenger('Yiayia', tower, 8, 2)
+south_park_characters = ['Cartman', 'Stan', 'Kyle', 'Kenny', 'Butters']
+star_wars_characters = ['Luke Skywalker', 'Han Solo', 'R2D2', 'Darth Vader', 'Jabba the Hut']
 
-cabin_1.dispatch()
+passengers = [Passenger(character, tower, random.choice(tower.floor_list), random.choice(tower.floor_list))
+              for character in south_park_characters]
+
+the_only_cabin.dispatch()
